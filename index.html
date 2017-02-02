@@ -40,13 +40,6 @@
         });
     </script>
     <!-- start-smoth-scrolling -->
-    <script>
-        window.scroll({
-            top: 2500
-            , left: 0
-            , behavior: 'smooth'
-        });
-    </script>
 </head>
 
 <body>
@@ -206,7 +199,7 @@
             <div class="contact-wrapper">
                 <div class="contact-wrapper-inner">
                     <h5 class="section-title" style="color: #FFF; font-size: 24px;">Testimonials</h5>
-                    <div class="row" style="color: #FFF; text-align: justify; font-size: 15px">
+                    <div class="row animated fadeInRight" style="color: #FFF; text-align: justify; font-size: 14px">
                         <div class="col-sm-12 col-md-4 col-lg-4"> <img src="images/Amon%20Taruvinga.jpg" class="img-rounded" width="135px" height="160px">
                             <hr>
                             <blockquote> “CIRCLE groomed us to appreciate the value of collaboration and how to do so successfully. From CIRCLE, we learnt how to manage conflict very likely under collaborations, and maximise on interdisciplinary synergies among other lessons.” </blockquote> <cite>Amon Taruvinga, a lecturer from South Africa’s University of Fort Hare and former CIRCLE Visiting Fellow</cite> </div>
@@ -481,19 +474,19 @@
                 , startDelay: 1000
             , });
         });
-        $('#home, #about, #works, #contact', 'https://nelsonkimaiga.wordpress.com#blog').waypoint(function () {
+        $('#home, #letter, #about, #testimonials', '').waypoint(function () {
             activenav($(this));
         }, {
             offset: function () {
                 return -$(this).height() + 52;
             }
         });
-        $('#home, #about, #works, #contact', 'https://nelsonkimaiga.wordpress.com#blog').waypoint(function () {
+        $('#home, #letter, #about, #testimonials', '').waypoint(function () {
             activenav($(this));
         }, {
             offset: '51px'
         });
-        $('#works').waypoint(function () {
+        $('#letter').waypoint(function () {
             $(this).find('.section-title, #filters').addClass('animated fadeInUp');
             $(this).find('.item').addClass('animated zoomIn');
         }, {
@@ -522,7 +515,7 @@
                 return $(window).height() + 100;
             }
         });
-        $('#contact').waypoint(function () {
+        $('#testimonials').waypoint(function () {
             $(this).find(' .section-title, .desc ').addClass('animated fadeInUp');
             $(this).find('.social a').addClass('animated zoomIn');
         }, {

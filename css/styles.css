@@ -39,6 +39,10 @@ article p {
     font-size: 14px;
 }
 
+#testimonials blockquote {
+    font-size: 13px;
+}
+
 .cssda {
     top: 100px;
     display: inline-block;
